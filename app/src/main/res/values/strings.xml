@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">OnGoingApp</string>
+    <string name="hint1"><i><b>Enter your Email</b></i></string>
+    <string name="hint2"><i><b>Enter your Password</b></i></string>
+    <string name="hint"><i><b>Enter your Name</b></i></string>
+    <string name="register"><u>Register</u></string>
+
+
 </resources>

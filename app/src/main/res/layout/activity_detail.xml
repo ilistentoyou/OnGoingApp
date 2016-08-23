@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+    <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+    <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+
+    <!-- Toolbar is the actual app bar with text and the action items -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#40c8ca"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balbasuar"
+            android:textSize="40sp"
+            android:paddingLeft="90dp"
+            android:textColor="#f17304"
+            android:id="@+id/text5"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/a"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="25dp"
+    android:id="@+id/profilePokemonImage"
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="known as Fushigidane\nis a Pokémon species in Nintendo \nand Game Freak's Pokémon franchise.\nDesigned by Ken Sugimori\n "
+            android:textSize="25sp"
+            android:textColor="#f17304"
+            android:id="@+id/textDetail"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="10"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+
+
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+<!-- \n is a Pokémon species in Nintendo \n
+        and Game Freak's Pokémon franchise.\n
+        Designed by Ken Sugimori\n -->
+
+

@@ -10,32 +10,36 @@ import android.widget.Button;
 import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
     TextView tv ;
     String ExternalFontPath;
     Typeface FontLoaderTypeface;
-    Toolbar mToolbar;
+    Toolbar mToolbar2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_sign_up);
+        mToolbar2 = (Toolbar) findViewById(R.id.toolbar2);
 
-        setSupportActionBar(mToolbar);
+        setSupportActionBar(mToolbar2);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 // Get access to the custom title view
-        TextView mTitle = (TextView) mToolbar.findViewById(R.id.text);
+        TextView mTitle2 = (TextView) mToolbar2.findViewById(R.id.text2);
         Typeface tf =  Typeface.createFromAsset(getAssets(),"Pokemon Solid.ttf");
-        mTitle.setTypeface(tf);
+        mTitle2.setTypeface(tf);
 
-        Button b = (Button)findViewById(R.id.button);
+        Button b = (Button)findViewById(R.id.button2);
         b.setTypeface(tf);
 
-        TextView register = (TextView)findViewById(R.id.register);
-        register.setTypeface(tf);
-
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent n = new Intent(getApplicationContext(),Pokemons.class);
+                startActivity(n);
+            }
+        });
 
 
         /*ActionBar actionBar = getSupportActionBar();
@@ -46,22 +50,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle(st);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#40c8ca")));
        // actionBar.setTitle(Html.fromHtml("<font color='#f17304'>ActionBartitle </font>"));*/
-    b.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent n = new Intent(getApplicationContext(),Pokemons.class);
-            startActivity(n);
 
-        }
-    });
-
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent n = new Intent(getApplicationContext(),SignUp.class);
-                startActivity(n);
-            }
-        });
 
 
 

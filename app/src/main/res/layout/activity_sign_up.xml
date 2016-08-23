@@ -10,26 +10,26 @@
     <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
     <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
 
-        <!-- Toolbar is the actual app bar with text and the action items -->
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="#40c8ca"
+    <!-- Toolbar is the actual app bar with text and the action items -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#40c8ca"
 
-             >
+        >
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sign in"
-                android:textSize="40sp"
-                android:paddingLeft="90dp"
-                android:textColor="#f17304"
-                android:id="@+id/text"
-                />
-        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="40sp"
+            android:paddingLeft="90dp"
+            android:textColor="#f17304"
+            android:id="@+id/text2"
+            />
+    </android.support.v7.widget.Toolbar>
 
     <EditText
         android:layout_width="300dp"
@@ -39,13 +39,13 @@
         android:ems="10"
         android:id="@+id/editText"
         android:background="#c5eaef"
-        android:hint="@string/hint1"
+        android:hint="@string/hint"
         android:textColorHint="#ffffff"
         android:textSize="25sp"
         android:textStyle="bold"
-         android:textAlignment="center"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
 
         android:textColor="#ffffff"
 
@@ -61,6 +61,24 @@
         android:ems="10"
         android:id="@+id/editText2"
         android:background="#c5eaef"
+        android:hint="@string/hint1"
+        android:textColorHint="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="25dp"
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="70dp"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:background="#c5eaef"
         android:hint="@string/hint2"
         android:textColorHint="#ffffff"
         android:textSize="25sp"
@@ -75,8 +93,8 @@
     <Button
         android:layout_width="110dp"
         android:layout_height="55dp"
-        android:text="Sign in"
-        android:id="@+id/button"
+        android:text="Sign up"
+        android:id="@+id/button2"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:textStyle="bold"
@@ -85,17 +103,7 @@
         android:textSize="25sp"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         android:textSize="20sp"
-        android:id="@+id/register"
-        android:text="@string/register"
-        android:textColor="#f17304"
-        android:layout_gravity="center_horizontal"
 
-
-        />
 
 
     <!-- This could also be included from another file using the include tag -->
