@@ -129,16 +129,22 @@ public class Pokemons extends AppCompatActivity {
             lv.setAdapter(caSorted);
 
         }
-        if(i==R.id.log_out) {
-            Intent n = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(n);
-        }
+
         if(i==R.id.defaultt) {
             x=true;
             lv.setAdapter(ca);
 
         }
 
+        if(i==R.id.profile) {
+            Intent cn = new Intent(getApplicationContext(), Profile.class);
+            startActivity(cn);
+        }
+
+        if(i==R.id.log_out) {
+            Intent n = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(n);
+        }
         return  true;
     }
 }

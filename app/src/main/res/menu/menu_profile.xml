@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+
+        android:title="Change picture"
+        android:id="@+id/changePicture">
+
+    </item>
+
+    <item
+
+        android:title="Pokemons"
+        android:id="@+id/pokemons">
+
+    </item>
+
+    <item
+
+        android:title="Log out"
+        android:id="@+id/log_outt">
+
+    </item>
+
+
+</menu>

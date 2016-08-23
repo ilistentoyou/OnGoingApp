@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+    <!-- AppBarLayout is a wrapper for a Toolbar in order to apply scrolling effects. -->
+    <!-- Note that AppBarLayout expects to be the first child nested within a CoordinatorLayout -->
+
+    <!-- Toolbar is the actual app bar with text and the action items -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#40c8ca"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="40sp"
+            android:paddingLeft="90dp"
+            android:textColor="#f17304"
+            android:id="@+id/textProfile"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ibrahim "
+            android:textSize="25sp"
+            android:textColor="#f17304"
+            android:id="@+id/nameProfile"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="10"
+            android:textAlignment="center"
+
+
+            />
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:src="@drawable/me"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:id="@+id/imageProfile"
+            />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ibrahim98@yahoo.com "
+            android:textSize="25sp"
+            android:textColor="#f17304"
+            android:id="@+id/emailProfile"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+
+            />
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
+
+    <!-- \n is a Pokémon species in Nintendo \n
+            and Game Freak's Pokémon franchise.\n
+            Designed by Ken Sugimori\n -->
+
+
