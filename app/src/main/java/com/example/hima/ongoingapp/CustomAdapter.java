@@ -46,33 +46,52 @@ public class CustomAdapter extends BaseAdapter {
         return position;
     }
 
-    public class Holder
+    static class Holder
     {
         TextView tv;
         ImageView img;
+
+
+
     }
     @Override
-    public View getView(final int position, final View convertView, ViewGroup parent) {
+    public View getView( int position,  View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
+
         Holder holder=new Holder();
         View rowView;
-        rowView = inflater.inflate(R.layout.list_item, null);
-        holder.tv=(TextView) rowView.findViewById(R.id.textView1);
-        holder.img=(ImageView) rowView.findViewById(R.id.imageView1);
+
+        if(convertView==null) {
+            convertView = inflater.inflate(R.layout.list_item, null);
+            holder.tv = (TextView) convertView.findViewById(R.id.textView1);
+            holder.img = (ImageView) convertView.findViewById(R.id.imageView1);
+            convertView.setTag(holder);
+
+        }
+
+        else
+
+        {
+           holder=(Holder) convertView.getTag();
+        }
+
+
+
+
         holder.tv.setText(result[position]);
-         Typeface tf =  Typeface.createFromAsset(context.getAssets(),"Pokemon Solid.ttf");
+        Typeface tf = Typeface.createFromAsset(context.getAssets(), "Pokemon Solid.ttf");
         holder.tv.setTypeface(tf);
         holder.img.setImageResource(imageId[position]);
-
 
         int lastPosition =-1;
 
         Animation anime= AnimationUtils.loadAnimation(context,(position>lastPosition ?R.anim.down_from_top : R.anim.up_from_down));
-        rowView.startAnimation(anime);
+        convertView.startAnimation(anime);
         lastPosition= position;
 
 
-        return rowView;
+
+        return convertView;
     }
 
 }
